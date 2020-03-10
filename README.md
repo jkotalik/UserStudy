@@ -48,7 +48,7 @@ Tutorial\TodoApi> dotnet add package Microsoft.EntityFrameworkCore.InMemory --ve
      - create a new API application `dotnet new api -n TodoApi`
      - Adds the NuGet packages  required in the next section `dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 3.1`
 
-2.  Open the `Todo` Folder in VS Code
+2.  Open the `TodoApi` Folder in VS Code
 
 ## Create the database model
 
