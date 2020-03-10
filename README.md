@@ -88,13 +88,6 @@ Tutorial\TodoApi> dotnet add package Microsoft.EntityFrameworkCore.InMemory --ve
      - It exposes a `Todos` property which represents the list of todo items in the database.
      - The call to `UseInMemoryDatabase` wires up the in memory database storage. Data will only be persisted as long as the application is running.
 
-1. Restart the server side application but this time we're going to use `dotnet watch`:
-    ```
-    dotnet watch run
-    ```
-
-    This will watch our application for source code changes and will restart the process as a result.
-
 ## Expose the list of todo items
 
 1. Create a file called `TodosController.cs` with the following class:
@@ -123,6 +116,14 @@ Tutorial\TodoApi> dotnet add package Microsoft.EntityFrameworkCore.InMemory --ve
     ```
 
     This method gets the list of todo items from the database and writes a JSON representation to the HTTP response. It also responds to a HTTP request on `/todos`.
+    
+
+1. Start the server side application, we are going to use `dotnet watch` to continuously recompile and run the app as you make changes:
+    ```
+    dotnet watch run
+    ```
+
+    This will watch our application for source code changes and will restart the process as a result.
 
 1. Navigate to the URL https://localhost:5001/todos in the browser. It should return an empty JSON array.
 
