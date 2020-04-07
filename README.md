@@ -135,7 +135,7 @@ Tutorial\TodoApi> dotnet add package Microsoft.EntityFrameworkCore.InMemory --ve
 
 1. Navigate to the URL https://localhost:5001/todos in the browser. It should return an empty JSON array.
 
-    <img src="https://user-images.githubusercontent.com/2546640/75116317-1a235500-5635-11ea-9a73-e6fc30639865.png" alt="empty json array" style="text-align:center" width =70% />
+    <img src="https://user-images.githubusercontent.com/8302101/78711810-792ee780-78cc-11ea-8b59-01982ddc32bb.png" alt="empty json array" style="text-align:center" width =70% />
 
 ## Adding a new todo item
 
