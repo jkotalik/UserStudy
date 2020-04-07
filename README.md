@@ -29,15 +29,23 @@
 - The commands above
     - Restores packages `npm i `
     - Starts the react app `npm start`
-1. The app will load but have no functionality
+    
+2. The app will load but have no functionality
 ![image](https://user-images.githubusercontent.com/2546640/75070087-86307c80-54c0-11ea-8012-c78813f1dfd6.png)
 
-    > Keep this React app running as we'll need it once we build the back-end in the upcoming steps
+You will see logs coming from npm saying:
+```
+Proxy error: Could not proxy request /todos from localhost:3000 to https://localhost:5001/.
+See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED)
+```
+This message is expected, as we haven't created and started our backend.
+
+Keep this React app running as we'll need it once we build the back-end in the upcoming steps.
 
 ### Build backend 
 **Create a new project**
 
-1. Create a new API application and add the necessary packages in the `TodoApi` folder
+1. Open a new console window (to keep the React app running), create a new API application and add the necessary packages in the `TodoApi` folder.
 
 ```
 Tutorial>dotnet new api -n TodoApi
@@ -90,7 +98,7 @@ Tutorial\TodoApi> dotnet add package Microsoft.EntityFrameworkCore.InMemory --ve
 
 ## Expose the list of todo items
 
-1. Create a file called `TodosController.cs` with the following class:
+1. Create a file called `TodosController.cs` in the `Controllers` Folder with the following class:
 
     ```C#
     using System;
