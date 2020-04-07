@@ -9,7 +9,7 @@
 1. Install [Node.js](https://nodejs.org/en/)
 1. Clone this repository and navigate to the Tutorial folder, this consists of the frontend application `TodoReact` app.
     ```bash
-    git clone https://github.com/glennc/UserStudy.git dotnet-study
+    git clone https://github.com/jkotalik/UserStudy.git dotnet-study
     cd dotnet-study/Tutorial 
     ```
 
